@@ -24,6 +24,7 @@ excerpt_link: more
 fancybox: true
 mathjax: true
 
+baidu_analytics: true
 # Miscellaneous
 google_analytics: ''
 favicon: /favicon.png
@@ -51,10 +52,3 @@ friends: false
 #开启——
 aboutme: A web developer fighting on the way.Hoping to share idea and experience with you here. 
 
-addthis:
-  enable: false  //这里的true改为false
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
