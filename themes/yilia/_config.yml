@@ -27,7 +27,7 @@ mathjax: true
 baidu_analytics: true
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+favicon: "https://avatars1.githubusercontent.com/u/5433519?v=3&amp;s=460"
 
 #你的头像url
 avatar: "https://avatars1.githubusercontent.com/u/5433519?v=3&amp;s=460"
