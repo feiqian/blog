@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: feiqian's blog
-subtitle:
+title: 一米の阳光
+subtitle: 不忘初心，方得始终
 description:
 author: feiqian
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: yilia
+theme: maupassant
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
