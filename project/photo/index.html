@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>大图像</title>
+		<style>
+			body { margin: 0px;padding: 0px;}
+			canvas { width: 100%; height: 100%;}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="./photoviewer.min.js"></script>
+		<script type="text/javascript">
+            const configJson = 
+`{
+	"path":"luoshenfu.tiles/",
+	"tileWidth":512,
+	"tileHeight":512,
+	"levs":2,
+	"2":
+	{
+		"width":18425,
+		"height":992
+	},
+	"1":
+	{
+		"width":9212,
+		"height":496
+	}
+}`;
+            const canvas = document.createElement('canvas');
+            document.body.appendChild(canvas);
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            new PhotoViewer(canvas, configJson);
+        </script>     
+	</body>
+</html>
