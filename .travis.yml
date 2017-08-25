@@ -1,0 +1,30 @@
+language: node_js
+sudo: required
+
+notifications:
+  email: false
+
+node_js:
+  - 4
+
+cache:
+  directories:
+    - node_modules
+
+before_script:
+  - git clone --branch master https://github.com/feiqian/feiqian.github.io.git public
+
+script:
+  - npm run build
+
+after_success:
+  - cd public
+  - git config user.name "feiqian" 
+  - git config user.email "710331184@qq.com"
+  - git add --all .
+  - git commit -m "travis ci build"
+  - git push https://$Personal_access_tokens@github.com/feiqian/feiqian.github.io.git master
+
+branches:
+  only:
+    - source
